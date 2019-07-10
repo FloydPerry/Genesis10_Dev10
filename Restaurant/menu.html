@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!--
+Created by Floyd Perry in association with Dev10 and the Software Guild
+Version 1.0
+all images sourced from pixabay.com
+  pizzeria - Image by Aksel Lian
+
+
+
+color scheme
+light teal 0, 164, 164
+bright teal 0, 247, 247
+ -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <noscript>
+      Please enable JavaScript for the best user experience. Items may not display properly.
+    </noscript>
+    
+    <title>Menu - Papanucci's Pizza</title>
+
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+          <link rel="stylesheet" href="restaurantStyles.css" type="text/css">
+          <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+
+<!-- All Styles for the Menu must be in internal style sheets -->
+    <style>
+            
+      h2  {
+        font-family:'Russo One';
+        text-align: center;
+        color: rgba(199, 0, 10, 1);
+        text-shadow: 2px 2px 1px rgba(255, 255, 255, .5);
+      }
+
+      .foodmenu {
+        padding-bottom: 10px;
+        background-image: linear-gradient( to bottom right,rgb(54, 58, 57), black);
+        border-radius: 5px;
+        color: white;
+      }
+
+      .drinkmenu {
+        background-image: linear-gradient( to bottom right,rgb(54, 58, 57), black);
+        color: white;
+        width: 100%;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 15px;
+      }
+
+      .drinkmenu  tbody tr:nth-child(even)  {
+        background-color: rgba(0, 0, 0, 0.25);
+        color: white;
+      }
+
+      table, th, td {
+        padding: 1% 1% 0 1%;
+        vertical-align: text-top;
+        text-align: left;
+      }
+
+      th  {
+        text-decoration: underline;
+        font-weight: 800;
+      }
+
+     .fixedWidth  {
+       width: 100%;
+       min-width: 200px;
+     }
+    </style>
+  </head>
+
+
+
+<body class="container-fluid">
+    <header>
+      <h1>Papanucci's Pizza</h1>
+    </header>
+
+<noscript>
+  Please enable JavaScript for the best user experience. Items may not display properly.
+</noscript>
+
+    <nav class="row">
+      <button class="col"><a href="index.html"><i class="fas fa-home"></i> HOME</a></button>
+      <button class="col"><a href="menu.html">MENU</a></button>
+      <button class="col"><a href="Contact.html">CONTACT</a></button>
+    </nav>
+
+
+  <main class="container-fluid">
+      <div class="jumbotron">
+        <h1 style="text-align: center;">Our "New" New York store is now open!</h1>
+      </div>
+      
+      <div class="container foodmenu">
+        <h2>Food Menu</h2>
+        <div class="row">
+          <div class="col fixedWidth"><h4>Anchovy Delight</h4><p>Our top seller! Extra cheese and triple anchovies sit atop our classic red sauce.</p><p>$19.99</p></div>
+          <div class="col fixedWidth"><h4>Classic Pepperoni</h4><p>Its hard to mess this one up. Includes: double pepperoni, gooey cheese and a cripsy thin crust.</p><p>$17.99</p>
+          </div>
+          <div class="col fixedWidth"><h4>The Works</h4><p>As the name suggests, this one has it all. Anchovy, pepperoni, sausage, olives, onions and yes the occasional hair or two. If you like pizza, you might like this.</p><p>$23.99</p></div>
+        </div>
+
+        <div class="row">
+          <div class="col fixedWidth"><h4>Leftover-Pizza</h4><p>Your mouth will thank you and so will your wallet. The leftover pizza begs the question, "Why buy fresh when you can buy leftovers?"</p><p>$2.99</p></div>
+          <div class="col fixedWidth"><h4>Burgers and Fries</h4>Try our mystery meat sandwiched betwee two incredibly thin slices of white bread. Don't order burgers from a pizzeria.</p><p>$99.99</p></div>
+          <div class="col fixedWidth"><h4>Garden-Salad</h4><p>Our salads come out super hot with extra big chunks of tomato. It includes your choice of dressing, but there's a good chance we will leave it out.</p><p>$10.99</p></div>
+        </div>
+      </div>
+<br><br>
+    <div class="container drinkmenu">
+    
+      <table class="drinkmenu">
+        <label><h2>Drink Menu</h2></label>
+          <tr>
+            <th>Beverages</th>
+          </tr>
+          <tr>
+            <td><p>Rootbeer</p></td>
+            <td><p>$3.00</p></td>
+          </tr>
+          <tr>
+            <td><p>Bottled Water</p></td>
+            <td><p>$1.25</p></td>
+          </tr>
+          <tr>
+            <td><p>Lemonade</p></td>
+            <td><p>$1.00</p></td>
+          </tr>
+          <tr>
+            <td><p>Iced Tea</p></td>
+            <td><p>$1.25</p></td>
+          </tr>
+      </table>
+    </div>
+
+  <br><br>
+
+    <div id="pizzaCarousel" class="carousel slide" data-ride="carousel"
+      style="padding: 10px; background-image: linear-gradient( to bottom right,rgb(54, 58, 57), black); border-radius: 5px;">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h4>We're opening a new location!</h4>
+        </div>
+        <div class="carousel-item">
+          <h4>We're rolling out our seasonal menu, with special options for this season!</h4>
+        </div>
+        <div class="carousel-item">
+          <h4>The Drink of the Month is SG Special Brew!</h4>
+        </div>
+      </div>
+    </div>
+
+
+
+  </main>
+
+
+
+
+
+ 
+  <footer>
+    <h2><p>123 Fake St., Springfield, Texas, 10226</p></h2>
+    <h2><p>(867)555-5309</p></h2>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/b97ab1440b.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="restaurant.js"></script>
+</body>
+
+</html>
